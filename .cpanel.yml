@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/u1496946/public_html/koperasi.bmtinsancita.com/
+    - /bin/cp -R * $DEPLOYPATH
