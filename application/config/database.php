@@ -49,12 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'depo_koperasi';
-// $db['default']['username'] = 'u3964998_koperasi';
-// $db['default']['password'] = 'u3964998_koperasi';
-// $db['default']['database'] = 'u3964998_koperasi';
+$db['default']['username'] = getenv('DB_USERNAME');
+$db['default']['password'] = getenv('DB_PASSWORD');
+$db['default']['database'] = getenv('DB_DATABASE');
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
