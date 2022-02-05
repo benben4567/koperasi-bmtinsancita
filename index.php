@@ -193,6 +193,19 @@ date_default_timezone_set('Asia/Jakarta');
 	}
 
 /*
+* --------------------------------------------------------------------
+* LOAD PHP DOT ENV FILE
+* --------------------------------------------------------------------
+*
+* And away we go...
+*
+*/
+require_once BASEPATH . 'dotenv/autoloader.php';
+
+$dotenv = new Dotenv\Dotenv(__DIR__);
+$dotenv->load();
+
+/*
  * --------------------------------------------------------------------
  * LOAD THE BOOTSTRAP FILE
  * --------------------------------------------------------------------
